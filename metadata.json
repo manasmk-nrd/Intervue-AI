@@ -1,0 +1,8 @@
+{
+  "name": "Intervue AI",
+  "description": "Personal AI mock interview platform for technical, academic, and behavioral preparation with real-time adaptive questioning and comprehensive feedback.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
