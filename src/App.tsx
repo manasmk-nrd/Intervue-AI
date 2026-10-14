@@ -81,7 +81,7 @@ export default function App() {
       setActiveTab('room');
     } catch (err: any) {
       console.error('Failed to launch interview session:', err);
-      alert('Could not start interview: ' + (err.message || 'Please try again.'));
+      setEvaluationError('Could not start interview: ' + (err.message || 'Please try again.'));
     } finally {
       setIsEvaluating(false);
     }
@@ -138,6 +138,22 @@ export default function App() {
           <span>
             <strong>Simulated Engine Active:</strong> Connect your Gemini API Key in AI Studio Secrets for live multi-turn model generation.
           </span>
+        </div>
+      )}
+
+      {/* Error Notification Banner */}
+      {evaluationError && (
+        <div className="bg-red-950/80 border-b border-red-800/60 px-4 py-2.5 text-xs text-red-200 flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <AlertCircle className="h-4 w-4 text-red-400 shrink-0" />
+            <span>{evaluationError}</span>
+          </div>
+          <button
+            onClick={() => setEvaluationError(null)}
+            className="text-red-400 hover:text-red-200 font-semibold px-2 py-0.5 rounded cursor-pointer transition-colors"
+          >
+            Dismiss
+          </button>
         </div>
       )}
 
