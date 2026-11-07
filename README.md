@@ -2,7 +2,7 @@
 
 AN AI CHATBOT THAT HELPS YOU TO PREPARE FOR INTERVIEWS BY PROVIDING ACCURATE SIMULATIONS OF A REAL INTERVIEW
 
-## ✨ Key Features
+##😎 Key Features
 
 - 🔊 **Voice-Based Responses:** Speak your answers aloud during mock interviews with real-time speech-to-text integration.
 - ⏱️ **Real-Time Timers:** Simulate actual time constraints per question.
